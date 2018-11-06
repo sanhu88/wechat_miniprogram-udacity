@@ -49,3 +49,7 @@ https://developers.weixin.qq.com/miniprogram/dev/
 opacity 来修改文字的深浅 0.8
 
 文字视图，通常我们都会设定行高是文字大小的1.4倍。
+
+## background
+src="/images/sunny-bg.png" mode="scaleToFill"
+mode 图片裁剪缩放的模式
