@@ -53,3 +53,9 @@ opacity 来修改文字的深浅 0.8
 ## background
 src="/images/sunny-bg.png" mode="scaleToFill"
 mode 图片裁剪缩放的模式
+	scaleToFill  不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素
+
+
+父视图：position: relative;
+ 需要定位的子视图position: absolute;
+ 	http://zh.learnlayout.com/position.html
