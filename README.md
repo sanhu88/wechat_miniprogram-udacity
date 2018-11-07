@@ -59,3 +59,23 @@ mode 图片裁剪缩放的模式
 父视图：position: relative;
  需要定位的子视图position: absolute;
  	http://zh.learnlayout.com/position.html
+## 	navigationBarBackgroundColor
+app.json
+
+##  onLoad() 
+onLoad() 函数,我们可以给 Page() 传入 onLoad() 函数
+onLoad() 函数会在页面启动时被执行
+
+## API
+https://test-miniprogram.com/api/weather/now?city=上海市
+
+## URL
+URL（统一资源定位符）是 URI（通用资源标识）的特定类型
+
+
+URL 通常由以下三或四个组成部分组成，第四部分可省略：
+
+协议。它可以是 HTTP（不带 SSL）或 HTTPS（带 SSL）。
+主机。例如：cn.udacity.com。
+路径。例如：/course/wechat-mini-program--nd666-cn-1。
+查询字符串。规则为?后显示参数查询值，伪 url 为：?param1=value1&param2=value2。
