@@ -84,3 +84,42 @@ URL 通常由以下三或四个组成部分组成，第四部分可省略：
 JSON 语法是 JavaScript 对象表示法语法的子集。
 
 数据通过"名称":"值"	"firstName" : "John"
+由逗号分隔			"firstName":"John" , "lastName":"Doe" 
+花括号用于保存对象	{ "firstName":"John" , "lastName":"Doe" }
+方括号用于保存数组	
+{"employees": [{ "firstName":"John" , "lastName":"Doe" }, { "firstName":"Anna" , "lastName":"Smith" }, { "firstName":"Peter" , "lastName":"Jones" }]}
+在线格式化	http://www.bejson.com/
+
+## 	发起网络请求
+发起 HTTPS 网络请求 wx.request
+修改位置index.js
+https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html
+
+箭头函数
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+success(res) {
+console.log(res.data)
+}
+ let result = res.data.result
+
+
+## 数据绑定
+https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/data.html
+WXML 中的动态数据均来自对应 Page 的 data
+数据绑定使用 Mustache 语法（双大括号）将变量包起来
+
+index.wxml中的 <view class="temp">{{nowTemp}}°</view>
+对应
+index.js中的
+data:{
+    nowTemp :14,
+    nowWeather : 'sunny'
+  },
+
+
+ 在data中，增加
+this.setData({
+   nowTemp : temp,
+   nowWeather : weather
+  })
