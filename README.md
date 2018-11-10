@@ -123,3 +123,17 @@ this.setData({
    nowTemp : temp,
    nowWeather : weather
   })
+setData 函数用于将数据从逻辑层发送到视图层（异步），同时改变对应的 this.data 的值（同步）。
+
+注意：1. 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。
+用 this.setData 函数来更新 Data 中的数据而不是去直接修改 this.data
+
+
+## wx.setNavigationBarColor
+ index.js-->onLoad()
+https://developers.weixin.qq.com/miniprogram/dev/api/ui/navigation-bar/wx.setNavigationBarColor.html
+
+ wx.setNavigationBarColor({
+  frontColor: '#000000', /*颜色必须六位*/
+  backgroundColor: weatherColorMap[weather],
+})
