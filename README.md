@@ -137,3 +137,16 @@ https://developers.weixin.qq.com/miniprogram/dev/api/ui/navigation-bar/wx.setNav
   frontColor: '#000000', /*颜色必须六位*/
   backgroundColor: weatherColorMap[weather],
 })
+
+
+## 	下拉刷新 onPullDownRefresh() 
+监听屏幕的下拉手势，
+调用网络 API 获取数据，
+调用网络的同时，在屏幕上给出提示（例如点点点或者圈圈），来告诉用户正在获取数据。
+数据返回后关闭提示，
+数据返回后在页面上显示新的数据
+
+官方文档
+https://developers.weixin.qq.com/miniprogram/dev/api/ui/pull-down-refresh/wx.startPullDownRefresh.html
+
+封装getNow()
