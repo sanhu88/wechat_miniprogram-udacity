@@ -150,3 +150,21 @@ https://developers.weixin.qq.com/miniprogram/dev/api/ui/navigation-bar/wx.setNav
 https://developers.weixin.qq.com/miniprogram/dev/api/ui/pull-down-refresh/wx.startPullDownRefresh.html
 
 封装getNow()
+
+## 天气预报list
+WXML:
+<scroll-view scroll-x>
+
+WXSS
+display: flex;
+flex-direction: column;
+
+获取现在的时间小时
+let nowHour = new Date().getHours()
+
+## 今天状态条
+教程写法
+ 	todayTemp: `${result.today.minTemp}° - ${result.today.maxTemp}°`,
+ 	todayDate: `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} 今天`
+使用了撇号`
+自己使用的是 Date() 拼接的
