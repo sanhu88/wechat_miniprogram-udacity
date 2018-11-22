@@ -168,3 +168,9 @@ let nowHour = new Date().getHours()
  	todayDate: `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} 今天`
 使用了撇号`
 自己使用的是 Date() 拼接的
+
+new Date().getTime() 获取时间戳
+
+
+## list
+flex-grow
