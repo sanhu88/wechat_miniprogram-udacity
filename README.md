@@ -174,3 +174,29 @@ new Date().getTime() 获取时间戳
 
 ## list
 flex-grow
+
+
+## 	获取位置信息
+bindtap = 'onTapLocation'
+
+wx.getLocation(Object object)
+
+
+wx.getLocation({
+ type: 'wgs84',
+ success (res) {
+   const latitude = res.latitude
+   const longitude = res.longitude
+   const speed = res.speed
+   const accuracy = res.accuracy
+ }
+})
+
+https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.html
+
+
+经纬度转化城市名
+逆地址解析
+reverseGeocoder(options:Object)
+
+https://lbs.qq.com/qqmap_wx_jssdk/method-reverseGeocoder.html
