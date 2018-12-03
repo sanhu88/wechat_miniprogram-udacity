@@ -229,3 +229,5 @@ onLoad(options) {
     })
     this.getWeekWeather();
   },
+## 		权限被拒绝
+  <button class="location-wrapper" open-type="openSetting" bindopensetting="onTapLocation">点击开启位置权限</button>
