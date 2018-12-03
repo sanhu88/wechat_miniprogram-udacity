@@ -200,3 +200,11 @@ https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.htm
 reverseGeocoder(options:Object)
 
 https://lbs.qq.com/qqmap_wx_jssdk/method-reverseGeocoder.html
+
+## 		城市值和tips绑定 -6.6使新的位置
+在 wxml 中使用 {{city}} 渲染动态变量
+在 data 中声明动态变量 city，设置默认值 '广州市'
+在获取城市名后，调用 setData() 对 city 赋值
+对 city 赋值后，重新获取天气数据
+在获取天气数据时，使用 data 中存储的当前城市名称
+在调用 setData 之后，调用 getNow() 获取天气数据
