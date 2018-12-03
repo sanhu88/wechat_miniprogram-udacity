@@ -208,3 +208,24 @@ https://lbs.qq.com/qqmap_wx_jssdk/method-reverseGeocoder.html
 对 city 赋值后，重新获取天气数据
 在获取天气数据时，使用 data 中存储的当前城市名称
 在调用 setData 之后，调用 getNow() 获取天气数据
+
+## 		wx.navigateTo 参数传递
+
+  onTapDayWeather() {
+    wx.navigateTo({
+      url: '/pages/list/list?city='+this.data.city,
+    });
+  },
+
+
+
+
+
+
+onLoad(options) {
+    console.log(options.city);
+    this.setData({
+      city: options.city,
+    })
+    this.getWeekWeather();
+  },
