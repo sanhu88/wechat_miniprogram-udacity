@@ -231,3 +231,13 @@ onLoad(options) {
   },
 ## 		权限被拒绝
   <button class="location-wrapper" open-type="openSetting" bindopensetting="onTapLocation">点击开启位置权限</button>
+
+## 		wx.getSetting判断用户是否已经授权
+      wx.getSetting({
+      success: res => {
+      	let auth = res.authSetting['scope.userLocation'];
+      		...
+
+## 		三元表达式
+  （上次车子经过三元立交桥，我说有三种理解方式，LP不懂，很冷）
+let locationTipsText = auth ? AUTHORIZED_TIPS: (auth === false) ? UNAUTHORIZED_TIPS : UNPROMPTED_TIPS;
